@@ -93,10 +93,6 @@ class SceneRenderer constructor(
     @AnyThread
     @Synchronized
     fun createDisplay(width: Int, height: Int, mesh: Mesh): Surface? {
-        if (displayTexture == null) {
-            Log.e(SCENERENDERER_TAG, ".createDisplay called before GL Initialization completed.")
-            return null
-        }
 
         requestedDisplayMesh = mesh
 

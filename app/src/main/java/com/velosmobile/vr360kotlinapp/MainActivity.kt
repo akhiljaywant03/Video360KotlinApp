@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         // Remember to place your 360 video file into res/raw/vrsample.mp4
         MainScope().launch {
-            videoView.loadMedia(video = R.raw.vrsample, horizontalDegrees = 360f)
+            videoView.loadMedia(video = R.raw.train, horizontalDegrees = 360f)
         }
     }
 
